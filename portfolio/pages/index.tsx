@@ -24,7 +24,7 @@ export default function Home(): JSX.Element {
   return (
     <div className="relative">
       <div
-        className={`flex items-center justify-center w-full h-20 text-[20px] font-PretendSemiBold fixed top-0 scroll transition-all duration-300 ${
+        className={`flex items-center justify-center w-full h-20 text-[20px] font-PretendSemiBold fixed top-0 scroll transition-a60 duration-3000 ${
           isScrolled ? "bg-white" : "bg-transparent text-white"
         }`}
       >
@@ -42,7 +42,7 @@ export default function Home(): JSX.Element {
                       isScrolled ? "" : "text-white"
                     }`}
                   >
-                    About me
+                    About
                   </p>
                 ),
               },
@@ -116,7 +116,7 @@ export default function Home(): JSX.Element {
             <img src="/profile.png" className="object-cover" />
           </div>
           <p className="w-[620px] inline-block font-PretendBold text-[56px] leading-[80px] mt-[44px] text-center">
-            ABOUT ME
+            ABOUT
           </p>
           <p className="mt-[18px] text-[#5C5C5C] text-[26px]">
             간단한 한줄 소개 적기
@@ -217,19 +217,34 @@ export default function Home(): JSX.Element {
             <p className="mt-[18px] text-[#5C5C5C] text-[26px]">간단한 성취</p>
             <div className="flex w-[20%] justify-between mt-[3vh] text-[#5C5C5C]">
               <div>
-                <div className="w-[50px]  h-[70px] hover:opacity-80 flex flex-col items-center">
+                <div
+                  className="w-[50px]  h-[70px] hover:opacity-80 flex flex-col items-center"
+                  onClick={() => window.open("https://github.com/MUYEONKIM")}
+                >
                   <img src="/git.png" />
                   <p className="font-PretendSemiBold text-[24px]">Git</p>
                 </div>
               </div>
               <div>
-                <div className="w-[50px] h-[70px]  hover:opacity-80 flex flex-col items-center">
+                <div
+                  className="w-[50px] h-[70px]  hover:opacity-80 flex flex-col items-center"
+                  onClick={() =>
+                    window.open(
+                      "https://www.notion.so/muyeon/e3bba7f1cf6f472a901e049ff11cbd9b"
+                    )
+                  }
+                >
                   <img src="/notion.png" />
                   <p className="font-PretendSemiBold text-[24px]">Notion</p>
                 </div>
               </div>
               <div>
-                <div className="w-[50px] h-[70px]  hover:opacity-80 flex flex-col items-center">
+                <div
+                  className="w-[50px] h-[70px]  hover:opacity-80 flex flex-col items-center"
+                  onClick={() =>
+                    window.open("https://velog.io/@rlaandus2/posts")
+                  }
+                >
                   <img src="/velog.png" />
                   <p className="font-PretendSemiBold text-[24px] mt-[3px]">
                     Velog
@@ -238,9 +253,9 @@ export default function Home(): JSX.Element {
               </div>
             </div>
             <div className="w-[90%] min-w-[50%%] mt-[96px] flex justify-between">
-              <div className="w-[30%] min-w-[2vw] h-[30vh] flex flex-col items-center justify-center bg-[#DCEFF4] rounded-full">
+              <div className="w-[30%] min-w-[2vw] h-[30vh] flex flex-col items-center  bg-[#DCEFF4] rounded-[48px] hover:opacity-60 duration-300">
                 <div className="flex flex-col">
-                  <div className="flex">
+                  <div className="flex mt-[5vh]">
                     <div className="w-[1.5vw] h-[1.5vw] ">
                       <img src="/name.png" className="object-cover" />
                     </div>
@@ -248,14 +263,14 @@ export default function Home(): JSX.Element {
                       교육
                     </p>
                   </div>
-                  <li className="mt-[2vh] font-PretendBold text-[#516B71] text-[20px] leading-[48px]">
+                  <li className="mt-[4vh] font-PretendBold text-[#516B71] text-[20px] leading-[36px] ">
                     KT-AivleSchool
                   </li>
                 </div>
               </div>
-              <div className="w-[30%] min-w-[2vw] h-[30vh] flex flex-col items-center justify-center bg-[#bceff4] rounded-full">
+              <div className="w-[30%] min-w-[2vw] h-[30vh] flex flex-col items-center  bg-[#a3b4c5] rounded-[48px] hover:opacity-60 duration-300">
                 <div className="flex flex-col">
-                  <div className="flex">
+                  <div className="flex mt-[5vh]">
                     <div className="w-[1.5vw] h-[1.5vw] ">
                       <img src="/name.png" className="object-cover" />
                     </div>
@@ -263,15 +278,15 @@ export default function Home(): JSX.Element {
                       수상
                     </p>
                   </div>
-                  <li className="mt-[2vh] font-PretendBold text-[#516B71] text-[20px] leading-[48px]">
+                  <li className="mt-[4vh] font-PretendBold text-[#516B71] text-[20px] leading-[36px] ">
                     KT-AivleSchool (Big_Project) <br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;최우수상
                   </li>
                 </div>
               </div>
-              <div className="w-[30%] min-w-[2vw] h-[30vh] flex flex-col items-center justify-center bg-[#FBFBEF] rounded-full">
+              <div className="w-[30%] min-w-[2vw] h-[30vh] flex flex-col items-center  bg-[#FBFBEF] rounded-[48px] hover:opacity-60 duration-300">
                 <div className="flex flex-col">
-                  <div className="flex">
+                  <div className="flex mt-[5vh]">
                     <div className="w-[1.5vw] h-[1.5vw] ">
                       <img src="/name.png" className="object-cover" />
                     </div>
@@ -279,7 +294,7 @@ export default function Home(): JSX.Element {
                       자격증
                     </p>
                   </div>
-                  <div className="mt-[2vh] font-PretendBold text-[#516B71] text-[20px] leading-[48px]">
+                  <div className="mt-[4vh] font-PretendBold text-[#516B71] text-[20px] leading-[36px] ">
                     <li>정보처리기사 ()</li>
                     <li>Aice-association ()</li>
                     <li>컴퓨터활용능력 1급 ()</li>
@@ -304,10 +319,8 @@ export default function Home(): JSX.Element {
                   <p className="font-PretendBold text-[34px] text-[#375984]">
                     Frontend
                   </p>
-                  <p className="font-PretendBold text-[#698AB1] text-[34px] leading-[48px]">
-                    메시지 전송 후 바로 발송현황 창에서
-                    <br />
-                    현재 메시지 전송 현황을 알려드립니다
+                  <p className="font-PretendBold text-[#698AB1] text-[34px] leading-[36px] ">
+                    qwe
                   </p>
                 </div>
               </div>
@@ -316,10 +329,8 @@ export default function Home(): JSX.Element {
                   <p className="font-PretendBold text-[34px] text-[#6C3111]">
                     Backend
                   </p>
-                  <p className="font-PretendBold text-[#6F6F6F] text-[34px] leading-[48px]">
-                    누르자마자 수신인에게
-                    <br />
-                    바로 전달됩니다
+                  <p className="font-PretendBold text-[#6F6F6F] text-[34px] leading-[36px] ">
+                    we3r
                   </p>
                 </div>
               </div>
@@ -328,10 +339,8 @@ export default function Home(): JSX.Element {
               <div className="w-[32.6vw] min-w-[626px] h-[597px] flex flex-col justify-between bg-[#F8F9FA] rounded-[25px] p-[3vw]">
                 <div>
                   <p className="font-PretendBold text-[34px]">Deployment</p>
-                  <p className="font-PretendBold text-[#727B88] text-[34px] leading-[48px]">
-                    템플릿으로 메시지 내용을
-                    <br />
-                    저장하여 간편하게 전송하세요.
+                  <p className="font-PretendBold text-[#727B88] text-[34px] leading-[36px] ">
+                    ert
                   </p>
                 </div>
               </div>
@@ -341,8 +350,7 @@ export default function Home(): JSX.Element {
                     Tools
                   </p>
                   <p className="font-PretendBold text-[#7079CB] text-[34px]">
-                    크레딧 상품을 구매하면 상품 별<br />
-                    보너스 크레딧을 증정합니다
+                    qq
                   </p>
                 </div>
               </div>
