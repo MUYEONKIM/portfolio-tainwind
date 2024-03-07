@@ -95,17 +95,17 @@ export default function Home(): JSX.Element {
       >
         <div className="h-full text-white ml-[13.02vw] flex items-start flex-col">
           <p className="mt-[303px] text-[24px] text-[#FCFCFC]">
-            인터넷 문자 메시지 전송의 모든 것
+            주니어 개발자 김무연
           </p>
           <p className="w-[520px] inline-block mt-[3vh] bg-gradient-to-r from-[#9FBAFD] to-[#4E81FF] text-[56px] leading-[80px] font-PretendBold text-transparent bg-clip-text">
-            가장 빠르고 안정적인 문자 서비스 SENDGO
+            MUYEON'S PORTFOLIO
           </p>
           <div className="mt-[6.31vh]">
-            <button className="h-[65px] w-[206px] bg-[#6250FF] rounded-[44px]">
-              회원가입
-            </button>
-            <button className="h-[65px] w-[206px] bg-[#242424] rounded-[44px] text-[#E0E0E0] ml-[21px]">
-              로그인
+            <button
+              className="h-[65px] w-[206px] bg-[#6250FF] rounded-[44px] text-[20px]"
+              onClick={() => router.push("/#part-1")}
+            >
+              More -{">"}
             </button>
           </div>
         </div>
@@ -119,7 +119,7 @@ export default function Home(): JSX.Element {
             ABOUT ME
           </p>
           <p className="mt-[18px] text-[#5C5C5C] text-[26px]">
-            모든 종류의 인터넷 SMS를 편리하게.
+            간단한 한줄 소개 적기
           </p>
           <div className="w-full mt-[75px] min-w-[1420px] h-[300px] flex flex-col items-center justify-evenly text-center bg-[#F0F0FA] rounded-[28px]">
             <div className="flex w-[70%] justify-between">
@@ -214,9 +214,7 @@ export default function Home(): JSX.Element {
             <p className="w-[620px] inline-block font-PretendBold text-[56px] leading-[80px] mt-[50px] text-center">
               ARCHVING
             </p>
-            <p className="mt-[18px] text-[#5C5C5C] text-[26px]">
-              고객님들의 간편함을 고민하였습니다
-            </p>
+            <p className="mt-[18px] text-[#5C5C5C] text-[26px]">간단한 성취</p>
             <div className="flex w-[20%] justify-between mt-[3vh] text-[#5C5C5C]">
               <div>
                 <div className="w-[50px]  h-[70px] hover:opacity-80 flex flex-col items-center">
@@ -299,9 +297,7 @@ export default function Home(): JSX.Element {
             <p className="w-[620px] inline-block font-PretendBold text-[56px] leading-[80px] mt-[50px] text-center">
               SKILLS
             </p>
-            <p className="mt-[18px] text-[#5C5C5C] text-[26px]">
-              고객님들의 간편함을 고민하였습니다
-            </p>
+            <p className="mt-[18px] text-[#5C5C5C] text-[26px]">기술 설명</p>
             <div className="w-full min-w-[1430px] mt-[96px] flex justify-between">
               <div className="w-[44.53vw] min-w-[855px] h-[720px] flex flex-col justify-between bg-[#DBE5FF] rounded-[25px] p-[3vw]">
                 <div>
@@ -362,7 +358,7 @@ export default function Home(): JSX.Element {
           Project
         </p>
         <button className="h-[65px] w-[206px] mt-[66px] bg-[#6250FF] rounded-[44px] text-[21px] text-white">
-          메시지 바로가기
+          캐러셀 들어갈자리
         </button>
       </div>
     </div>
