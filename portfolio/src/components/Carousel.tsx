@@ -3,14 +3,12 @@ import { Button, Paper } from "@mui/material";
 import Carousel from "react-material-ui-carousel";
 
 function Item(props: any) {
-  console.log(props.item.url);
   return (
     <Paper>
-      <h2>{props.item.name}</h2>
+      <h2>{props.item.name}프로젝트 이름</h2>
       <img src={props.item.url} width={"100px"} className="object-cover" />
-      <p>{props.item.description}</p>
-
-      <Button className="CheckButton">Check it out!</Button>
+      <p>{props.item.description}내용요약</p>
+      <button>자세히 보러가기</button>
     </Paper>
   );
 }

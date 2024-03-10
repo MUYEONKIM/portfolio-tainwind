@@ -90,7 +90,7 @@ export default function Home(): JSX.Element {
         </div>
       </div>
       <div
-        className="h-[100vh] w-full bg-gray-600 font-PretendMedium bg-fixed "
+        className="h-[100vh] w-full bg-gray-600 font-PretendMedium bg-fixed bg-cover"
         style={{ backgroundImage: "url('/back.png')" }}
       >
         <div className="h-full text-white ml-[13.02vw] flex items-start flex-col">
@@ -254,12 +254,12 @@ export default function Home(): JSX.Element {
             </div>
             <div className="w-[90%] min-w-[50%%] mt-[96px] flex justify-between">
               <div className="w-[30%] min-w-[2vw] h-[30vh] flex flex-col items-center  bg-[#DCEFF4] rounded-[48px] hover:opacity-60 duration-300">
-                <div className="flex flex-col">
-                  <div className="flex mt-[5vh]">
+                <div className="flex flex-col w-[70%]">
+                  <div className="flex  mt-[5vh] ">
                     <div className="w-[1.5vw] h-[1.5vw] ">
                       <img src="/name.png" className="object-cover" />
                     </div>
-                    <p className="ml-[2vw] font-PretendBold text-[34px] text-[#0F1F4B] leading-6">
+                    <p className="ml-[1.5vw] font-PretendBold text-[34px] text-[#0F1F4B] leading-6">
                       교육
                     </p>
                   </div>
@@ -268,29 +268,30 @@ export default function Home(): JSX.Element {
                   </li>
                 </div>
               </div>
-              <div className="w-[30%] min-w-[2vw] h-[30vh] flex flex-col items-center  bg-[#a3b4c5] rounded-[48px] hover:opacity-60 duration-300">
-                <div className="flex flex-col">
-                  <div className="flex mt-[5vh]">
+              <div className="w-[30%] min-w-[2vw] h-[30vh] flex flex-col items-center bg-[#a3b4c5] rounded-[48px] hover:opacity-60 duration-300">
+                <div className="flex flex-col w-[70%]">
+                  <div className="flex items-center mt-[5vh]">
                     <div className="w-[1.5vw] h-[1.5vw] ">
                       <img src="/name.png" className="object-cover" />
                     </div>
-                    <p className="ml-[2vw] font-PretendBold text-[34px] text-[#0F1F4B] leading-6">
+                    <p className="ml-[1.5vw] font-PretendBold text-[34px] text-[#0F1F4B] leading-6">
                       수상
                     </p>
                   </div>
                   <li className="mt-[4vh] font-PretendBold text-[#516B71] text-[20px] leading-[36px] ">
-                    KT-AivleSchool (Big_Project) <br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;최우수상
+                    KT-AivleSchool <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Big_Project) <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;최우수상
                   </li>
                 </div>
               </div>
               <div className="w-[30%] min-w-[2vw] h-[30vh] flex flex-col items-center  bg-[#FBFBEF] rounded-[48px] hover:opacity-60 duration-300">
-                <div className="flex flex-col">
+                <div className="flex flex-col w-[70%]">
                   <div className="flex mt-[5vh]">
                     <div className="w-[1.5vw] h-[1.5vw] ">
                       <img src="/name.png" className="object-cover" />
                     </div>
-                    <p className="ml-[2vw] font-PretendBold text-[34px] text-[#0F1F4B] leading-6">
+                    <p className="ml-[1.5vw] font-PretendBold text-[34px] text-[#0F1F4B] leading-6">
                       자격증
                     </p>
                   </div>
